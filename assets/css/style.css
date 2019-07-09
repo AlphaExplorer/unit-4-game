@@ -11,6 +11,10 @@ body{
     background-image: url('../images/background.png');   
 }
 
+p{
+    margin: 0 0 1rem 0;
+}
+
 .title{
     width: 25%;
     padding: 2rem 0 2rem 0;
@@ -21,38 +25,62 @@ body{
 }
 
 .instructions{
-    width: 35%;
+    width: 50%;
     padding: 2rem 0 2rem 0;
-    margin: 1rem 0 1rem 1rem;
+    margin: 1rem 0 0 1rem;
     background-color: seashell;
 }
 
-.target_number{
-    width: 25%;
+.container_1{
+    width: 50%;
     margin: 1rem 0 1rem 1rem;
+    height: 5rem;
+}
+.random_number{
+    width: 57%;
+    height: 100%;
+    float: left;
     background-color: olivedrab;
+    color: black;
+    font-size: 35px;
 }
 
 .scoreboard{
-    width: 25%;
-    margin: 1rem 0 1rem 1rem;
+    width: 40%;
+    height: 100%;
+    float: right;
+    margin: 0;
     background-color: aqua;
 }
+
 
 .gems_board{
     width: 25%;
     margin: 1rem 0 1rem 1rem;
 }
 
-.counter_section{
-    width: 25%;
+.crystal{
+    width: 5rem;
+    height: 5rem;
+}
+
+.container_2{
+    width: 50%;
     margin: 1rem 0 1rem 1rem;
+
+}
+
+.score_title{
+    width: 57%;
     background-color:green;
-    
+    color: antiquewhite;
 }
 
 .counter{
-    width: 100%;
+    width: 57%;
     background-color:green;
-
+    color: antiquewhite;
+    margin: 1rem 0 0 0;
+    height: 5rem;
+    font-size: 35px;
 }

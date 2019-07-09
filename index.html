@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Christal Collector!</title>
+    <title>Crystal Collector!</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -12,21 +12,35 @@
     <div class = "title">Christal Collector!</div>     <!-- end of title div -->
 
     <div class = "instructions">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>You will be given a random number at the star of the game.</p>
+            
+        <p>There are 4 crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>   
+        
+        <p>You will win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p> 
+        
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+
+        <p>Each time when the game starts, the game will change the values of each crystal</p>
     </div>    <!-- end of instruction div -->
 
 
-    <div class = "target_number"></div>    <!-- end of target_number div -->
-
+    <div class = "container_1">
+    <div class = "random_number"></div>    <!-- end of target_number div -->
     <div class = "scoreboard">
-        <div class= "message"></div>
         <div class= "wins"></div>
         <div class= "losses"></div>
-    </div>    <!-- end of scoreboard div -->
+    </div>  <!-- end of scoreboard div -->
+    </div>  <!-- end of container div -->
 
-    <div class = "gems_board"></div>    <!-- end of gems_board div -->
+    <div class = "gems_board">
+        <img class = "crystal crystal_1" src="assets/images/crystal_1.png" alt="crystal_1">
+        <img class = "crystal crystal_2" src="assets/images/crystal_2.png" alt="crystal_2">
+        <img class = "crystal crystal_3" src="assets/images/crystal_3.png" alt="crystal_3">
+        <img class = "crystal crystal_4" src="assets/images/crystal_4.png" alt="crystal_4">
+    </div>    <!-- end of gems_board div -->
 
-    <div class = "counter_section">Your total score is:
+    <div class = "container_2">
+        <div class = "score_title">Your total score is:</div>
         <div class = "counter"></div>
     </div>    <!-- end of counter_section div -->
 
