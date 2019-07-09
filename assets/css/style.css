@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Arial', Helvetica Neue, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #777777;
+    background-image: url('../images/background.png');   
+}
+
+.title{
+    width: 25%;
+    padding: 2rem 0 2rem 0;
+    margin: 1rem 0 1rem 1rem;
+    background-color: chocolate;
+    color: antiquewhite;
+    font-size:35px;
+}
+
+.instructions{
+    width: 35%;
+    padding: 2rem 0 2rem 0;
+    margin: 1rem 0 1rem 1rem;
+    background-color: seashell;
+}
+
+.target_number{
+    width: 25%;
+    margin: 1rem 0 1rem 1rem;
+    background-color: olivedrab;
+}
+
+.scoreboard{
+    width: 25%;
+    margin: 1rem 0 1rem 1rem;
+    background-color: aqua;
+}
+
+.gems_board{
+    width: 25%;
+    margin: 1rem 0 1rem 1rem;
+}
+
+.counter_section{
+    width: 25%;
+    margin: 1rem 0 1rem 1rem;
+    background-color:green;
+    
+}
+
+.counter{
+    width: 100%;
+    background-color:green;
+
+}
