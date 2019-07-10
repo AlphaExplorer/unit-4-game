@@ -7,6 +7,8 @@
     <title>Crystal Collector!</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
 </head>
 <body>
     <div class = "title">Christal Collector!</div>     <!-- end of title div -->
@@ -32,11 +34,12 @@
     </div>  <!-- end of scoreboard div -->
     </div>  <!-- end of container div -->
 
-    <div class = "gems_board">
-        <img class = "crystal crystal_1" src="assets/images/crystal_1.png" alt="crystal_1">
-        <img class = "crystal crystal_2" src="assets/images/crystal_2.png" alt="crystal_2">
-        <img class = "crystal crystal_3" src="assets/images/crystal_3.png" alt="crystal_3">
-        <img class = "crystal crystal_4" src="assets/images/crystal_4.png" alt="crystal_4">
+    <div class = "crystal_board">
+        <img class= "crystal" id = "crystal_1" src="assets/images/crystal_1.png" alt="crystal_1">
+        <img class= "crystal" id = "crystal_2" src="assets/images/crystal_2.png" alt="crystal_1">
+        <img class= "crystal" id = "crystal_3" src="assets/images/crystal_3.png" alt="crystal_1">
+        <img class= "crystal" id = "crystal_4" src="assets/images/crystal_4.png" alt="crystal_1">
+
     </div>    <!-- end of gems_board div -->
 
     <div class = "container_2">
@@ -44,7 +47,6 @@
         <div class = "counter"></div>
     </div>    <!-- end of counter_section div -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="assets/javascript/game.js"></script>
+
 </body>
 </html>

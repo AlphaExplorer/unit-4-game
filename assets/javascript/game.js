@@ -1,35 +1,76 @@
+// create a function that generates a random numbers.
+
+function random_number_generator(min, max) 
+{
+    var number = Math.floor(Math.random()*(max-min)+min);
+    return number;
+}
+
+// define variables
+
 var wins = 0;
 var losses = 0;
 var score = 0;
+var random_number=random_number_generator(19, 120);
 
-// create a function that generates a random number from 19 to 120 which will be used to generate the target number every game reset
-
-random_number = function random_number_generator() 
+//initiated event handler/game functionality
+$(document).ready(function()
 {
-    var random_number = Math.floor(Math.random()*(120-19)+19);
-    return random_number;
-}
-
-// create a function that generates a random value from 1 to 12 which will be used to assign values to the crystals
-crystal_value = function crystal_valur_generator() 
-{
-    var random_value = Math.floor(Math.random()*(12-1)+1);
-    return random_value;
-}
-
-// load random number
-$(document).ready(function(){
+    //Game set up
     $(".random_number").html(random_number);
     $(".wins").html("Wins: "+wins);
     $(".losses").html("Losses: "+losses);
     $(".counter").html(score);
-    $("crystal_1").val(crystal_value);
-    $("crystal_2").val(crystal_value);
-    $("crystal_3").val(crystal_value);
-    $("crystal_4").val(crystal_value);
-})
+    $('#crystal_1').attr('value', random_number_generator(1, 19));
+    $('#crystal_2').attr('value', random_number_generator(1, 19));
+    $('#crystal_3').attr('value', random_number_generator(1, 19));
+    $('#crystal_4').attr('value', random_number_generator(1, 19));
+    
+    //event handler
+    $('.crystal').on('click', function(event)
+    {
+        crystal_clicked = event.target;
+        crystalValue = crystal_clicked.getAttribute('value');
+        score += Number(crystalValue);
+        $('.counter').html(score);
+     
+        if(score === random_number)//winning logic
+        {
+            alert("Congratulations, you won! Let's guess another number");
+            wins += 1;
+            $(".wins").html("Wins: "+wins);
+            random_number=random_number_generator(19, 120);
+            $(".random_number").html(random_number);
+            score = 0;
+            $(".counter").html(score);
+            $('#crystal_1').attr('value', random_number_generator(1, 19));
+            $('#crystal_2').attr('value', random_number_generator(1, 19));
+            $('#crystal_3').attr('value', random_number_generator(1, 19));
+            $('#crystal_4').attr('value', random_number_generator(1, 19));
+        }
+        else if(score > random_number)//Losing logic
+        {
+            alert("Unfortunatelly, you lost! Let's give it another try");
+            losses += 1;
+            $(".losses").html("Losses: "+losses);
+            random_number=random_number_generator(19, 120);
+            $(".random_number").html(random_number);
+            score = 0;
+            $(".counter").html(score);
+            $('#crystal_1').attr('value', random_number_generator(1, 19));
+            $('#crystal_2').attr('value', random_number_generator(1, 19));
+            $('#crystal_3').attr('value', random_number_generator(1, 19));
+            $('#crystal_4').attr('value', random_number_generator(1, 19));
+        }
+    });
+    
 
-console.log(document.getElementsByClassName("crystal_1"))
+
+
+
+
+
+});
 
 
 
